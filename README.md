@@ -10,7 +10,6 @@ AHK скрипт для Genshin Impact, частично совместим с H
 🙏 Использование скриптов может привести к блокировке учетной записи, использовать на свой страх и риск.
 
 [__✨Boosty✨__](https://boosty.to/kramar1337)
-[__✨Qiwi✨__](https://qiwi.com/n/KRAMBIBA1337)
 [__✨SteamTrade✨__](https://steamcommunity.com/tradeoffer/new/?partner=176456946&token=QbYR9jmE)
 
 [Подробное описание](https://github.com/Kramar1337/GenshinImpact-AHK-flex/wiki)
