@@ -71,8 +71,6 @@ Insert - Включить/отключить ReShade
 
 
 
-
-
 https://www.youtube.com/channel/UCcugQ37kzYL881PFmpIizGg/videos
 https://www.youtube.com/channel/UC6knkn0zDrC4pcooEG6NmnQ/videos
 https://www.hoyolab.com/article/3973326
@@ -82,86 +80,21 @@ https://github.com/Akebi-Group/Akebi-GC
 https://github.com/34736384/genshin-fps-unlock
 https://github.com/NineTailTeam/Genshin-Impact-Macro
 
-
-
-
-
-account create 2
-логин 2, пасс 2
-
-https://gc-tools.exzork.me/artifact
-https://pastebin.com/1frUjpa3
-!killall
-!give 102 2000000 - повысить ранг до 60 уровня.
-!give 202 10000000 - 10 млн моры, чтобы качать таланты и прочее. ВСЕ вещи в инвентаре по 1000 штук.
-!setworldlevel 8 - 8 уровень мира. можете поставить по своему усмотрению.
-!giveall - получите всех персов 90 лвла, все оружки 5 пробуды, 6 конст на каждого персонажа и скины.
-!drop XXX YYY - XXX указывайте название предмета или его ID, вместо YYY – количество добавляемых предметов.
-
-https://gc-tools.exzork.me/artifact
-https://pastebin.com/1frUjpa3
-
-!spawn 28020601 1
-!drop 25050101
-
-/spawn 21010101 20 1
-/spawn 24010101 10 1
-
-/spawn 29020102 1 80
-/spawn 29030103 1 80 - чилд
-/spawn 21011501 1 80 - старнынй хиричурл
-/spawn 21010101 1 200 - айди хиличурла
-/spawn 24010101 1 200 - Ruin Guard
-
-/spawn 28010101 10 - золотой краб
-!spawn 28010301 10 - лягушка
-!spawn 28020101 5 - снежная лиса
-!spawn 28020102 1 - багровая лиса
-!spawn 28020201 1 - белка
-!spawn 28020401 1 - собака
-!spawn 28020502 5 - Нефритовый Кот
-!spawn 28020503 5 : Серый снежный кот
-!spawn 28020504 5 : Северная кошка
-!spawn 28020505 5 : Полосатый тигровый кот
-!spawn 28020506 5 : Шериф Кэт
-!spawn 28020507 5 : Черная кошка
-!spawn 28020508 5 : Сапфир
-!spawn 28020509 : Серый снежный кот
-!spawn 28020601 1 - ласка
-!spawn 28020701 - лиса
-!spawn 28020801 - мидведь
-!spawn 28020902 - Собака-самурай (боевая)
-!spawn 28030404 : Изумрудный зяблик
-!spawn 28210101 : Домашний золотой краб
-!spawn 28210301 : Домашняя лягушка
-!spawn 28210401 - домашний писюн с земли
-!spawn 29030103 - чайлд
-!spawn 29050103 - Синьора
-!spawn 29060101 5 0 - райден копье
-!spawn 29060102 5 0 - райден меч
-
-!spawn 29010104 - Штормовой ужас
-!spawn 29030103 - Чайлд
-!spawn 29040101 - Аждаха
-!spawn 29050104 - Синьора Багровая Ведьма Углей
-!spawn 29020102 - Андриус, Повелитель волков
-
-где 21010101 - айди хиличурла, 1 - количество хиличурлов и 90 - уровень хиличурла.
-!killall
-Телепортация
-Когда вы хотите куда-то телепортироваться, используйте внутриигровую функцию маркировки на карте.
-Отметьте точку на карте, используя маркировку рыболовного крючка (последняя).
-(Необязательно) переименуйте маркер карты в число, чтобы переопределить координату Y по умолчанию (высота, по умолчанию 300).
-Подтвердите и закройте карту.
-Вы увидите, как ваш персонаж падает с очень высокой точки назначения, именно в том месте, которое вы отметили.
+https://twitter.com/deviltakoyaki/status/1348970224834396160
 
 
 
 Запланировано:
  - Жду пачку пресетов решейда от чела в некст году
  - Бекфлип https://youtu.be/EqSJiplBgpM?t=229
+ - https://www.youtube.com/watch?v=qnD_KckKBvQ
+ - нёвилет прокрут
 
 
+
+
+Изменения: 24.10.2023
+ - Микрофикс скип диалога и доступа к релику
 
 Изменения: 07.06.2023
  - Ganyu more
@@ -947,7 +880,7 @@ Loop, parse, GroupNameMap1337Var, `n, `r
 ;===============================Оверлей создание
 var0ov := 1 	;заглушка для работы оверлея
 GenOverlayList := 12 	;кол-во страниц
-CheckVarKey1PaimonGifList := "9,10" 	;где гифки "5,6"
+CheckVarKey1PaimonGifList := "10" 	;где гифки "5,6"
 ScreenWidthRe1:=A_ScreenWidth
 ScreenHeightRe1:=A_ScreenHeight
 HpBarW:=ScreenWidthRe1
@@ -1061,7 +994,7 @@ hwndGuihamdlewindow := WinExist()
 Gui, 99: Cancel
 
 if AutoExitAHK
-SetTimer, ExitOnGameClose, 3000 	;Автовыход через 3 секунды если нет окна игры или лаунчера
+SetTimer, ExitOnGameClose, 4000 	;Автовыход через 3 секунды если нет окна игры или лаунчера
 return
 ;=======================================================================================================================
 ;===================================================================================Конец мейн потока, дальше идут метки
@@ -1226,11 +1159,16 @@ Return
 
 ;=====================================Если игра закрыта то скрипт сам закроется
 ExitOnGameClose() {
-    global gameexe1337
-    if (!WinExist(gameexe1337)) {
-		MsgBox,,, AutoClose, 1
+    if !(ProcessExist("StarRail.exe") || ProcessExist("GenshinImpact.exe") || ProcessExist("yuanshen.exe"))
+    {
+        MsgBox,,, AutoClose, 1
         ExitApp
     }
+}
+
+ProcessExist(processName) {
+    Process, Exist, %processName%
+    return ErrorLevel
 }
 
 
@@ -2132,7 +2070,18 @@ Loop
 	}
 if Checkbox1locknpc
 {
-
+Keywait %key_skipNPS%
+	if FIXchat
+	{
+		StructSize1337 := A_PtrSize + 16
+		VarSetCapacity(InfoStruct1337, StructSize1337)
+		NumPut(StructSize1337, InfoStruct1337)
+		DllCall("GetCursorInfo", UInt, &InfoStruct1337)
+		Result1337 := NumGet(InfoStruct1337, 8)
+		; MsgBox %Result1337%
+		if (Result1337 = 0) 			;если размер курсора 0 то скрипт не нажимает кнопки
+			Return
+	}
 	1toggle1skipnpc := !1toggle1skipnpc
 	if (1toggle1skipnpc)
 	{
@@ -3069,16 +3018,16 @@ AntiVACHashChanger:="fghfh3534gjdgdfgfj6867jhmbdsq4123asddfgdfgaszxxcasdf423dfgh
 Metkakey_animcancel:
 if jopa1 							;______скрипт на ембер удален, терь тут обычная автоатака
 {
-if FIXchat
-{
-	StructSize1337 := A_PtrSize + 16
-	VarSetCapacity(InfoStruct1337, StructSize1337)
-	NumPut(StructSize1337, InfoStruct1337)
-	DllCall("GetCursorInfo", UInt, &InfoStruct1337)
-	Result1337 := NumGet(InfoStruct1337, 8)
-	if (Result1337 <> 0) 			;если размер курсора больше 0 то мы в чате и скрипт не нажимает кнопки
-		Return
-}
+; if FIXchat
+; {
+	; StructSize1337 := A_PtrSize + 16
+	; VarSetCapacity(InfoStruct1337, StructSize1337)
+	; NumPut(StructSize1337, InfoStruct1337)
+	; DllCall("GetCursorInfo", UInt, &InfoStruct1337)
+	; Result1337 := NumGet(InfoStruct1337, 8)
+	; if (Result1337 <> 0) 			;если размер курсора больше 0 то мы в чате и скрипт не нажимает кнопки
+		; Return
+; }
 IfWinActive, %gameexe1337%
 {
 sleep 1
