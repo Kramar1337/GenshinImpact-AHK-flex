@@ -91,7 +91,8 @@ https://twitter.com/deviltakoyaki/status/1348970224834396160
  - нёвилет прокрут
 
 
-
+Изменения: 1.10.2024
+ - Fix Auto exit
 
 Изменения: 24.10.2023
  - Микрофикс скип диалога и доступа к релику
@@ -1821,7 +1822,7 @@ Else
 }
 Loop
 {
-    GetKeyState, xSpaceVar1, sc39, P
+    GetKeyState, xSpaceVar1, %key_bhop%, P
     If xSpaceVar1 = U
         break
 
